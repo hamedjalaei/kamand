@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>FirstPage.qml</file>
+        <file>KamandBtn.qml</file>
+        <file>KamandCheckBox.qml</file>
+    </qresource>
+    <qresource prefix="/firstPage">
+        <file>first page/background.png</file>
+        <file>first page/defualt lang.png</file>
+        <file>first page/En.png</file>
+        <file>first page/fa.png</file>
+        <file>first page/logo.png</file>
+        <file>first page/quit.png</file>
+        <file>first page/logo2.png</file>
+    </qresource>
+    <qresource prefix="/font">
+        <file>font/zekton rg.ttf</file>
+    </qresource>
+    <qresource prefix="/publicPic">
+        <file>publicPic/check.png</file>
+    </qresource>
+</RCC>
