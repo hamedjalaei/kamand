@@ -1,4 +1,3 @@
-About
 kamand is persian manual linux command and a GUI For man. It's written in c++(qt).
 kamand is a sample of free and open source softwares. It's developed For GNU/Linux distributions.
 
