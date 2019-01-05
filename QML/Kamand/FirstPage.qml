@@ -5,6 +5,9 @@ import QtGraphicalEffects 1.0
 Item {
     id:rootBackgroud
     anchors.fill: parent
+
+    signal  goToNextPage(bool lang)
+
     Image {
         id: backGround
         anchors.centerIn: parent
@@ -30,32 +33,26 @@ Item {
         height: parent.height/4.5
         spacing: parent.height/15
 
-        KamandBtn{
+        SelectLang{
+            id: sl
             width: parent.width
-            height: parent.height/3.5
-            txt : "En"
+            height: parent.height
         }
-        KamandBtn{
-            width: parent.width
-            height: parent.height/3.5
-            txt : "Fa"
-        }
-        KamandBtn{
-            width: parent.width
-            height: parent.height/3.5
-            txt:"Quit"
-            onClk: {
-                tm.start()
-            }
 
-            Timer{
-                id:tm
-                interval: 250
-                onTriggered: {
-                    Qt.quit()
+        AnimatedImage{
+            source: "qrc:/publicPic/publicPic/pointLine.gif"
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: sourceSize.width * 0.8
+            height: sourceSize.height * 0.8
+
+            onFrameChanged: {
+                if(currentFrame === frameCount-1 ){
+                    playing = false
+                    goToNextPage(sl.lang)
                 }
             }
         }
+
     }
 
     KamandCheckBox{

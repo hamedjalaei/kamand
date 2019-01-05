@@ -1,36 +1,35 @@
 import QtQuick 2.0
 
 Item {
-    id:selectLangPArt
-    height: parent.height/2
+    id: sl
     width: parent.width
-    anchors.horizontalCenter: parent.horizontalCenter
     property bool lang: true
+
+    signal  selectedLang(bool lang)
+
     Column{
-        spacing: 1
-        height: parent.height
         width: parent.width
-        anchors.horizontalCenter: parent.horizontalCenter
+        height: parent.height/6
+
+
         KamandRadioBtn{
-            height: parent.height/5
-            width: parent.width/2.5
-            anchors.horizontalCenter: parent.horizontalCenter
-            txt:"English"
-            selected: lang
+            width: parent.width
+            height: parent.height
+            caption : "English"
+            selected:  sl.lang
             onSelect: {
-                selectLangPArt.lang = true
-                console.log("P")
+                sl.lang = true
+                selectedLang(sl.lang)
             }
         }
         KamandRadioBtn{
-            height: parent.height/5
-            width: parent.width/2.5
-            anchors.horizontalCenter: parent.horizontalCenter
-            txt:"Persian"
-            selected: !lang
+            width: parent.width
+            height: parent.height
+            caption:qsTr("Persian")
+            selected:  !sl.lang
             onSelect: {
-                selectLangPArt.lang = false
-                console.log("E")
+                sl.lang = false
+                selectedLang(sl.lang)
             }
         }
     }
