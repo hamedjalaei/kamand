@@ -8,6 +8,21 @@ Item {
         anchors.fill: parent
         color: "#00b46d"
         radius: 5
+        Rectangle{
+            height: parent.height/3
+            width: height
+            radius: width
+            anchors.right: parent.right
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.margins: width
+        }
+
+        Rectangle{
+            radius: parent.radius
+            color:  "#f8e501"
+            width: parent.width/2
+            height: parent.height
+        }
         Text {
             text: txt
             anchors.centerIn: parent
