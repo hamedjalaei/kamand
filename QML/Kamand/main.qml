@@ -9,12 +9,17 @@ Window {
     flags: Qt.FramelessWindowHint | Qt.Window
     color: "transparent"
 
-    FirstPage{
-        width: 100
-        height: 20
+    SecondPage{
+        anchors.fill: parent
 
-        onGoToNextPage: {
-            console.log(lang)
-        }
+        onMinimiz: showMinimized()
     }
+
+//    FirstPage{
+//        anchors.fill: parent
+
+//        onGoToNextPage: {
+//            console.log(lang)
+//        }
+//    }
 }

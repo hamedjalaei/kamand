@@ -5,6 +5,10 @@
         <file>KamandCheckBox.qml</file>
         <file>SelectLang.qml</file>
         <file>KamandRadioBtn.qml</file>
+        <file>SecondPage.qml</file>
+        <file>KamandBtn.qml</file>
+        <file>SecondPageHeader.qml</file>
+        <file>KamandUpdateBtn.qml</file>
     </qresource>
     <qresource prefix="/firstPage">
         <file>first page/background.png</file>
