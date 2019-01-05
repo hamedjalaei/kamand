@@ -11,10 +11,10 @@ Item {
         Text {
             text: txt
             anchors.centerIn: parent
-            font.family: "b kamran"
+            font.family: "vazir"
             color: "#ffffff"
             font.bold: true
-            font.pixelSize: parent.height*0.75
+            font.pixelSize: parent.height*0.6
         }
     }
     NumberAnimation on scale{
