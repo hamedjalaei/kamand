@@ -15,11 +15,7 @@ Item {
         KamandRadioBtn{
             width: parent.width
             height: parent.height
-<<<<<<< Updated upstream
             caption : "English "
-=======
-            caption : "English"
->>>>>>> Stashed changes
             selected:  sl.lang
             onSelect: {
                 sl.lang = true
@@ -29,11 +25,7 @@ Item {
         KamandRadioBtn{
             width: parent.width
             height: parent.height
-<<<<<<< Updated upstream
             caption:qsTr("Persian ")
-=======
-            caption:qsTr("Persian")
->>>>>>> Stashed changes
             selected:  !sl.lang
             onSelect: {
                 sl.lang = false
