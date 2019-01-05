@@ -30,8 +30,8 @@ Item {
     }
     Text {
         text: qsTr("Default Lang")
-        color: "#ffffff"
         font.family: ftn.name
+        color: "#ffffff"
         FontLoader{
             id: ftn
             source: "qrc:/font/font/zekton rg.ttf"

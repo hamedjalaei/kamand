@@ -9,11 +9,11 @@ Window {
     flags: Qt.FramelessWindowHint | Qt.Window
     color: "transparent"
 
-    FirstPageV2{
+    FirstPage{
         width: 100
         height: 20
 
-        onNextPage: {
+        onGoToNextPage: {
             console.log(lang)
         }
     }

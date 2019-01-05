@@ -2,11 +2,7 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>FirstPage.qml</file>
-        <file>KamandBtn.qml</file>
         <file>KamandCheckBox.qml</file>
-        <file>FirstPageV2.qml</file>
-        <file>KamandSliderBtn.qml</file>
-        <file>KamandTimeLine.qml</file>
         <file>SelectLang.qml</file>
         <file>KamandRadioBtn.qml</file>
     </qresource>
@@ -24,8 +20,8 @@
     </qresource>
     <qresource prefix="/publicPic">
         <file>publicPic/check.png</file>
-        <file>publicPic/pointLine.gif</file>
         <file>publicPic/18.png</file>
         <file>publicPic/19.png</file>
+        <file>publicPic/pointLine.gif</file>
     </qresource>
 </RCC>
