@@ -15,7 +15,7 @@ Item {
         KamandRadioBtn{
             width: parent.width
             height: parent.height
-            caption : "English"
+            caption : "English "
             selected:  sl.lang
             onSelect: {
                 sl.lang = true
@@ -25,7 +25,7 @@ Item {
         KamandRadioBtn{
             width: parent.width
             height: parent.height
-            caption:qsTr("Persian")
+            caption:qsTr("Persian ")
             selected:  !sl.lang
             onSelect: {
                 sl.lang = false
