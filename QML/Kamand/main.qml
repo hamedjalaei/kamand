@@ -3,13 +3,18 @@ import QtQuick.Window 2.11
 
 Window {
     visible: true
-    width: 500*1.5
-    height: 380*1.5
+    width: 385
+    height: 582
     title: "Kaman"
     flags: Qt.FramelessWindowHint | Qt.Window
     color: "transparent"
 
-    FirstPage{
+    FirstPageV2{
+        width: 100
+        height: 20
 
+        onNextPage: {
+            console.log(lang)
+        }
     }
 }
